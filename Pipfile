@@ -9,6 +9,8 @@ ipdb = "*"
 
 [packages]
 apscheduler = "*"
+prettyconf = "*"
+python-twitter = "*"
 
 [requires]
 python_version = "3.8.3"
