@@ -9,6 +9,11 @@ ipdb = "*"
 
 [packages]
 apscheduler = "*"
+prettyconf = "*"
+loafer = "*"
+requests = "*"
+python-twitter = "*"
+asyncio = "*"
 
 [requires]
 python_version = "3.8.5"

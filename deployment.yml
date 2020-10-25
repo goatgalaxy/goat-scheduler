@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment 
+metadata:
+  name: scheduler 
+  namespace: default 
+  labels:
+    app: scheduler
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: scheduler
+      tier: backend
+      track: stable
+  template:
+    metadata:
+      labels:
+        app: scheduler
+        tier: backend
+        track: stable
+    spec:
+      containers:
+      - name: scheduler
+        image: localhost:5000/scheduler
+
